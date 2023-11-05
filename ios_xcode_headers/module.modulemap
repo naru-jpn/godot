@@ -1,0 +1,6 @@
+module Godot {
+  umbrella header "umbrella.h"
+
+  export *
+  module * { export * }
+}

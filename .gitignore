@@ -367,4 +367,5 @@ $RECYCLE.BIN/
 
 # Development
 ios_xcode
-scripts
+Godot.app
+ios.zip
