@@ -44,4 +44,6 @@
 @property(strong, nonatomic) UIWindow *window;
 @property(strong, class, readonly, nonatomic) ViewController *viewController;
 
+- (void)setLaunchArguments:(int)_gargc argv:(char **)_gargv;
+
 @end

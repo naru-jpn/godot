@@ -33,17 +33,11 @@
 #import <UIKit/UIKit.h>
 #include <stdio.h>
 
-int gargc;
-char **gargv;
-
 int main(int argc, char *argv[]) {
 #if defined(VULKAN_ENABLED)
 	//MoltenVK - enable full component swizzling support
 	setenv("MVK_CONFIG_FULL_IMAGE_VIEW_SWIZZLE", "1", 1);
 #endif
-
-	gargc = argc;
-	gargv = argv;
 
 	@autoreleasepool {
 		NSString *className = NSStringFromClass([GodotApplicalitionDelegate class]);
