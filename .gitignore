@@ -364,3 +364,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+
+# Development
+ios_xcode
+scripts
