@@ -43,13 +43,13 @@
 
 #define kRenderingFrequency 60
 
-int gargc;
-char **gargv;
-
 extern int ios_main(int, char **);
 extern void ios_finish();
 
-@implementation AppDelegate
+@implementation AppDelegate {
+	int gargc;
+	char **gargv;
+}
 
 enum {
 	SESSION_CATEGORY_AMBIENT,
@@ -64,6 +64,11 @@ static ViewController *mainViewController = nil;
 
 + (ViewController *)viewController {
 	return mainViewController;
+}
+
+- (void)setLaunchArguments:(int)_gargc argv:(char **)_gargv {
+	gargc = _gargc;
+	gargv = _gargv;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

@@ -30,9 +30,6 @@
 
 #import <UIKit/UIKit.h>
 
-extern int gargc;
-extern char **gargv;
-
 @class ViewController;
 
 // FIXME: Add support for both OpenGL and Vulkan when OpenGL is implemented again,
