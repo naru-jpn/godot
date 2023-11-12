@@ -43,8 +43,8 @@
 
 #define kRenderingFrequency 60
 
-extern int gargc;
-extern char **gargv;
+int gargc;
+char **gargv;
 
 extern int ios_main(int, char **);
 extern void ios_finish();
