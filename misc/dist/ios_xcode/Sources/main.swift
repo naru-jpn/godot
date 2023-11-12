@@ -1,4 +1,10 @@
-import Foundation
-import Godot
+import UIKit
 
-_ = Godot.GodotApplicalitionDelegate()
+exit(
+  UIApplicationMain(
+    CommandLine.argc,
+    CommandLine.unsafeArgv,
+    nil,
+    NSStringFromClass(ApplicationDelegate.self)
+  )
+)
