@@ -364,3 +364,11 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+
+# Development
+ios_xcode
+!misc/dist/ios_xcode
+libgodot.a
+MoltenVK.xcframework
+Godot.app
+ios.zip
